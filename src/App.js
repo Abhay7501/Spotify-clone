@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Api_fetch from './components/Api_fetch'
+import Body from './components/Body'
+import SideNavBar from './components/SideNavBar'
+import TopNavBar from './components/TopNavBar'
+
+
+
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className='flex'>
+      <SideNavBar className="hidden " />
+      <div className='w-screen '>
+        <TopNavBar />
+        <Body />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
